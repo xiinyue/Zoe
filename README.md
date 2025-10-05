@@ -69,7 +69,8 @@ Now deploy:
 ```bash
 bash <(curl -fsSL https://bit.ly/42Wj4Wa)
 ```
-Enter SESSION, MODE, HANDLER, and SUDO.
+Enter SESSION, MODE, HANDLER, and SUDO. 
+(To change other environment variables after installation, edit config.env.)
 
 Manage with PM2:
 
