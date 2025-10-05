@@ -20,3 +20,13 @@ services:
       - key: SESSION
         sync: false
         required: true
+      - key: SUDO
+        sync: false
+        required: true
+      - key: HANDLER
+        sync: false
+        required: true
+      - key: MODE
+        sync: false
+        required: true
+
