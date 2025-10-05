@@ -11,7 +11,7 @@ First, fork this repository to your GitHub account:
 
 ## Get Session ID
 Generate your session ID by scanning the QR code at:  
-[![Scan](https://img.shields.io/badge/SCAN%20QR-FFf61C?style=for-the-badge&logo=&logoColor=black)](https://github.com/Xirtexe/Zoe/fork)
+[![Scan](https://img.shields.io/badge/SCAN%20QR-FFf61C?style=for-the-badge&logo=&logoColor=black)](https://zoee-xd-web.onrender.com)
 
 ---
 
