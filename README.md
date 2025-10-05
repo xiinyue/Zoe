@@ -37,7 +37,7 @@ Get your Koyeb API key.
 
 Now deploy:  
 
-[![DEPLOY](https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white)](https://app.koyeb.com/deploy?type=git&repository=github.com/Xirtexe/Zoe&branch=main)
+[![DEPLOY](https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white)](https://app.koyeb.com/deploy?type=git&repository=github.com/Xirtexe/Zoe&branch=main&env[SESSION]=your_session_id&env[HANDLER]=null&env[MODE]=private&env[ANTI_DELETE]=true)
 
 ---
 
@@ -69,3 +69,9 @@ git clone https://github.com/Xirtexe/Zoe
 cd Zoe
 npm install
 npm start
+```
+---
+
+## Special thanks to
+- [Loki ❤️](https://github.com/Loki-Xer) <br>
+- [Shuhaib ❤️](https://github.com/Abhiiyh) <br>
