@@ -1,7 +1,7 @@
 {
   "name": "zoe-xd",
   "version": "1.0.0",
-  "description": "",
+  "description": "A multi-device WhatsApp bot built with Node.js.",
   "main": "index.js",
   "scripts": {
     "start": "pm2 start . --attach --name zoe",
