@@ -20,4 +20,3 @@ services:
       - key: SESSION
         sync: false
         required: true
-    startCommand: yarn start
