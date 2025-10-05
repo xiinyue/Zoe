@@ -1,4 +1,4 @@
-# Zoe-XD WhatsApp Bot 🤖💬
+# Zoe-XD WhatsApp Bot
 
 ![Zoe Logo](https://i.imgur.com/MCkdz2x.jpeg)
 
@@ -93,16 +93,12 @@ Then deploy to your preferred platform:
 
 ---
 
-## 👨‍💻 Developer
-- Name: **Badan Ser**  
+## 👨‍💻 Developers
+- Name: **Badan Ser, Shuhaib**
 - Project: **Zoe-XD WhatsApp Bot**  
 - Repo: [Zoe](https://github.com/Xirtexe/Zoe)
 
 ---
-
-## 📸 Screenshots
-![Bot Demo](https://files.catbox.moe/85pjxr.png)
-
 ---
 
 ## ⭐ Support
