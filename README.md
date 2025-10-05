@@ -64,7 +64,7 @@ Now deploy:
 
 ### Deploy to VPS
 
-**1** Quick setup
+**1.**  Quick setup
 
 ```bash
 bash <(curl -fsSL https://bit.ly/42Wj4Wa)
@@ -81,7 +81,7 @@ pm2 stop zoe-bot
 pm2 logs zoe-bot
 ```
 
-**2** Manual setup
+**2.**  Manual setup
 
 - Set environment variables (in .env file or system)
 
