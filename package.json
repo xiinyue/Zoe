@@ -1,0 +1,40 @@
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start . --attach --name zoe",
+    "stop": "pm2 stop zoe && pm2 delete zoe",
+    "restart": "pm2 restart zoe",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shahid",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "6.7.19",
+    "badan-ser": "^1.0.5",
+    "browser-id3-writer": "^4.4.0",
+    "cheerio": "^1.0.0-rc.10",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.3.1",
+    "express": "latest",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "fs": "^0.0.1-security",
+    "google-tts-api": "^2.0.2",
+    "heroku-client": "^3.1.0",
+    "https": "^1.0.0",
+    "jimp": "^1.6.0",
+    "link-preview-js": "^3.0.4",
+    "node-webpmux": "^3.1.7",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "pm2": "^5.3.1",
+    "puppeteer": "^24.4.0",
+    "sequelize": "^6.23.0",
+    "sharp": "^0.32.6",
+    "simple-git": "^3.7.1",
+    "sqlite3": "^5.1.7"
+  }
+}
