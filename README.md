@@ -7,7 +7,6 @@ A multi-device WhatsApp bot built with Node.js.
 First, fork this repository to your GitHub account:  
 [![Fork](https://img.shields.io/badge/FORK%20REPO-FFf61C?style=for-the-badge&logo=&logoColor=black)](https://github.com/Xirtexe/Zoe/fork)
 
----
 
 ## Get Session ID
 Generate your session ID by scanning the QR code at:  
