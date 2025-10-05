@@ -1,4 +1,15 @@
-const { Zoe, mode, isViewOnce, toAudio, AudioMetaData, cutMedia, toVideo, extractUrlsFromText, sendUrl } = require("../lib/Index");
+const { 
+  Zoe, 
+  mode, 
+  isViewOnce, 
+  toAudio, 
+  AudioMetaData, 
+  cutMedia, 
+  toVideo, 
+  extractUrlsFromText, 
+  sendUrl 
+} = require("../lib/Index");
+
 const fancy = require("./func/fancy");
 let { getString } = require("./func/lang");
 let lang = getString("converter");
@@ -18,17 +29,10 @@ Zoe(
 );
 
 Zoe(
-  {
-    pattern: "fancy",
-    fromMe: mode,
-    desc: lang.FANCY_DESC,
-    type: "converter",
-  },
+  { pattern: "fancy", fromMe: mode, desc: lang.FANCY_DESC, type: "converter" },
   async (m, match) => {
     if (!match && !m.reply_message?.text) {
-      return m.reply(lang.FANCY_ALERT +
-          fancy.list("Text Here", fancy)
-      );
+      return m.reply(lang.FANCY_ALERT + fancy.list("Text Here", fancy));
     }
 
     let id = match.match(/\d/g)?.join("");
@@ -48,13 +52,8 @@ Zoe(
 );
 
 Zoe(
-  {
-    pattern: "vv",
-    fromMe: mode,
-    desc: lang.VV_DESC,
-    type: "converter",
-  },
-  async (m) => {
+  { pattern: "vv", fromMe: mode, desc: lang.VV_DESC, type: "converter" },
+  async m => {
     if (!m.reply_message) return m.reply(lang.VO_ALERT);
     if (!isViewOnce(m)) return m.reply(lang.NVO_ALERT);
 
@@ -63,16 +62,10 @@ Zoe(
 );
 
 Zoe(
-  {
-    pattern: "ptv",
-    fromMe: mode,
-    desc: lang.PTV_DESC,
-    type: "converter",
-  },
+  { pattern: "ptv", fromMe: mode, desc: lang.PTV_DESC, type: "converter" },
   async (m, _, client) => {
     if (!m.reply_message) return m.reply(lang.V_ALERT);
-    if (m.reply_message.type !== "videoMessage")
-      return m.reply(lang.NV_ALERT);
+    if (m.reply_message.type !== "videoMessage") return m.reply(lang.NV_ALERT);
 
     let media = await m.reply_message.download();
     return client.sendMessage(
@@ -84,16 +77,10 @@ Zoe(
 );
 
 Zoe(
-  {
-    pattern: "gif",
-    fromMe: mode,
-    desc: lang.GIF_DESC,
-    type: "converter",
-  },
+  { pattern: "gif", fromMe: mode, desc: lang.GIF_DESC, type: "converter" },
   async (m, match, client) => {
     if (!m.reply_message) return m.reply(lang.V_ALERT);
-    if (m.reply_message.type !== "videoMessage")
-      return m.reply(lang.NV_ALERT);
+    if (m.reply_message.type !== "videoMessage") return m.reply(lang.NV_ALERT);
 
     let media = await m.reply_message.download();
     let msg = { video: media, mimetype: "video/mp4", gifPlayback: true };
@@ -104,18 +91,11 @@ Zoe(
 );
 
 Zoe(
-  {
-    pattern: "sticker",
-    fromMe: mode,
-    desc: lang.STICKER_DESC,
-    type: "converter",
-  },
-  async (m) => {
-    if (!m.reply_message)
-      return m.reply(lang.VI_ALERT);
+  { pattern: "sticker", fromMe: mode, desc: lang.STICKER_DESC, type: "converter" },
+  async m => {
+    if (!m.reply_message) return m.reply(lang.VI_ALERT);
 
     let t = m.reply_message;
-
     if (t.type !== "videoMessage" && t.type !== "imageMessage")
       return m.reply(lang.NVI_ALERT);
 
@@ -127,20 +107,10 @@ Zoe(
   }
 );
 
-/**
- * Convert Video/Audio to MP3
- */
 Zoe(
-  {
-    pattern: "mp3",
-    fromMe: mode,
-    desc: lang.MP3_DESC,
-    type: "converter",
-  },
+  { pattern: "mp3", fromMe: mode, desc: lang.MP3_DESC, type: "converter" },
   async (m, _, client) => {
-    if (!m.reply_message)
-      return m.reply(lang.AV_ALERT);
-
+    if (!m.reply_message) return m.reply(lang.AV_ALERT);
     if (!["videoMessage", "audioMessage"].includes(m.reply_message.type))
       return m.reply(lang.NAV_ALERT);
 
@@ -160,19 +130,10 @@ Zoe(
   }
 );
 
-/**
- * Take (Change Metadata)
- */
 Zoe(
-  {
-    pattern: "take",
-    fromMe: mode,
-    desc: lang.TAKE_DESC,
-    type: "converter",
-  },
+  { pattern: "take", fromMe: mode, desc: lang.TAKE_DESC, type: "converter" },
   async (m, match, c) => {
-    if (!m.reply_message)
-      return m.reply(lang.VAS_ALERT);
+    if (!m.reply_message) return m.reply(lang.VAS_ALERT);
 
     let buf = await m.reply_message.download();
     let type = m.reply_message.type;
@@ -209,21 +170,12 @@ Zoe(
 );
 
 Zoe(
-  {
-    pattern: "doc",
-    fromMe: mode,
-    desc: lang.DOC_DESC,
-    type: "converter",
-  },
+  { pattern: "doc", fromMe: mode, desc: lang.DOC_DESC, type: "converter" },
   async (m, x, c) => {
     m.client = c;
     x = (x || "converted media").replace(/[^A-Za-z0-9]/g, "-");
 
-    if (
-      !["videoMessage", "audioMessage", "imageMessage"].includes(
-        m.reply_message?.type
-      )
-    )
+    if (!["videoMessage", "audioMessage", "imageMessage"].includes(m.reply_message?.type))
       return m.reply(lang.NAVI_ALERT);
 
     let b = await m.reply_message.download();
@@ -238,19 +190,9 @@ Zoe(
 );
 
 Zoe(
-  {
-    pattern: 'trim',
-    fromMe: mode,
-    desc: lang.TRIM_DESC,
-    type: 'converter',
-  },
+  { pattern: "trim", fromMe: mode, desc: lang.TRIM_DESC, type: "converter" },
   async (m, match, client) => {
-    if (
-      !(
-        m.reply_message?.type === 'audioMessage' ||
-        m.reply_message?.type === 'videoMessage'
-      )
-    ) {
+    if (!(m.reply_message?.type === 'audioMessage' || m.reply_message?.type === 'videoMessage')) {
       return m.reply(lang.NAV_ALERT);
     }
     if (!match) {
@@ -267,21 +209,17 @@ Zoe(
         }
         return t.trim();
       };
+
       const start = parseTime(startRaw);
       const end = parseTime(endRaw);
       const buff = await m.reply_message.download();
       const isAudio = m.reply_message.type === 'audioMessage';
       const trimmed = await cutMedia(buff, start, end, isAudio);
+
       if (isAudio) {
-        return client.sendMessage(m.jid, {
-          audio: trimmed,
-          mimetype: 'audio/mpeg',
-        });
+        return client.sendMessage(m.jid, { audio: trimmed, mimetype: 'audio/mpeg' });
       } else {
-        return client.sendMessage(m.jid, {
-          video: trimmed,
-          mimetype: 'video/mp4',
-        });
+        return client.sendMessage(m.jid, { video: trimmed, mimetype: 'video/mp4' });
       }
     } catch (err) {
       return m.reply(lang.F_ALERT);
@@ -290,19 +228,9 @@ Zoe(
 );
 
 Zoe(
-  {
-    pattern: 'black',
-    fromMe: mode,
-    desc: lang.BLACK_DESC,
-    type: 'converter',
-  },
+  { pattern: "black", fromMe: mode, desc: lang.BLACK_DESC, type: "converter" },
   async (m, match, client) => {
-    if (
-      !(
-        m.reply_message?.type === 'audioMessage' ||
-        m.reply_message?.type === 'videoMessage'
-      )
-    ) {
+    if (!(m.reply_message?.type === 'audioMessage' || m.reply_message?.type === 'videoMessage')) {
       return m.reply(lang.NAV_ALERT);
     }
     try {
@@ -319,12 +247,7 @@ Zoe(
 );
 
 Zoe(
-  {
-    pattern: "tovv",
-    fromMe: mode,
-    desc: lang.TOVV_DESC,
-    type: "converter",
-  },
+  { pattern: "tovv", fromMe: mode, desc: lang.TOVV_DESC, type: "converter" },
   async (message) => {
     if (!message.reply_message) return message.reply(lang.AVI_ALERT);
     let media = await message.reply_message.download();
@@ -348,21 +271,14 @@ Zoe(
 );
 
 Zoe(
-  {
-    pattern: "toimg",
-    fromMe: mode,
-    desc: lang.TOIMG_DESC,
-    type: "converter",
-  },
+  { pattern: "toimg", fromMe: mode, desc: lang.TOIMG_DESC, type: "converter" },
   async (message) => {
     if (!message.reply_message) return message.reply(lang.S_ALERT);
     let media = await message.reply_message.download();
     if (!media) return message.reply(lang.F_ALERT);
 
-    if (
-      message.reply_message?.type !== "stickerMessage" || 
-      message.reply_message.msg?.stickerMessage?.isAnimated
-    ) {
+    if (message.reply_message?.type !== "stickerMessage" || 
+        message.reply_message.msg?.stickerMessage?.isAnimated) {
       return message.reply(lang.WNAS_ALERT);
     }
 
@@ -375,12 +291,7 @@ Zoe(
 );
 
 Zoe(
-  {
-    pattern: "tomp4",
-    fromMe: mode,
-    desc: lang.TOMP4_DESC,
-    type: "converter",
-  },
+  { pattern: "tomp4", fromMe: mode, desc: lang.TOMP4_DESC, type: "converter" },
   async (message) => {
     if (!message.reply_message) return message.reply(lang.S_ALERT);
     let media = await message.reply_message.download();
@@ -403,15 +314,11 @@ Zoe(
 );
 
 Zoe(
-  {
-    pattern: "upload",
-    fromMe: mode,
-    desc: lang.UPLOAD_DESC,
-    type: "converter",
-  },
+  { pattern: "upload", fromMe: mode, desc: lang.UPLOAD_DESC, type: "converter" },
   async (message, match) => {
     match = (await extractUrlsFromText(match || message.reply_message?.text))[0];
     if (!match) return message.reply(lang.L_ALERT);
+
     const allowedExtensions = ["png", "jpg", "jpeg", "mp4", "mp3", "zip", "gif", "webp"];
     try {
       const url = new URL(match);
@@ -428,4 +335,3 @@ Zoe(
     }
   }
 );
-
