@@ -58,7 +58,7 @@ If you don't have an account in Railway, create one:
 
 Now deploy:  
 
-[![DEPLOY](https://img.shields.io/badge/-DEPLOY-FFf61C?style=for-the-badge&logo=railway&logoColor=black)](https://railway.app/new/template?template=https://github.com/Xirtexe/Zoe)
+[![DEPLOY](https://img.shields.io/badge/-DEPLOY-FFf61C?style=for-the-badge&logo=railway&logoColor=black)](https://railway.com/deploy/Eyzy61?referralCode=9jiDW-)
 
 ---
 
