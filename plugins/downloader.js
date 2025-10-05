@@ -18,6 +18,7 @@ async function hIG(m, q, label = "Instagram Downloader") {
   );
 
   if (!data?.length) return m.reply(lang.NF_ALERT);
+
   const options = data.map((u, i) => ({
     name: `${i + 1}/${data.length}`,
     id: `${PREFIX}insta dl-url:${u.url}`,
@@ -41,7 +42,7 @@ async function hIG(m, q, label = "Instagram Downloader") {
     data
       .map((u, i) => `╎ *${i + 1}/${data.length}*  *~${u.type}~*`)
       .join`\n` +
-    `\n╎\n╎ ` + lang.SNR_ALERT +"\n╰╺╺╺╺╺╺╺╺╺╺╡";
+    `\n╎\n╎ ${lang.SNR_ALERT}\n╰╺╺╺╺╺╺╺╺╺╺╡`;
 
   return m.sendButton(m.jid, {
     jid: m.jid,
@@ -60,11 +61,7 @@ async function ytdlFn(m, q, type = "audio") {
   if (!q) return m.reply(lang.IVM_ALERT);
   if (!isYouTubeUrl(q)) return m.reply(lang.YL_ALERT);
 
-  const d =
-    type === "audio"
-      ? await ytdl(q, "mp3")
-      : await ytdl(q, "720p");
-
+  const d = type === "audio" ? await ytdl(q, "mp3") : await ytdl(q, "720p");
   const mime = type === "audio" ? "audio/mpeg" : "video/mp4";
 
   const payload = {
