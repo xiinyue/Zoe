@@ -63,11 +63,17 @@ Now deploy:
 ---
 
 ### Deploy to VPS
+Set environment variables (in .env file or system)
 ```bash
 git clone https://github.com/Xirtexe/Zoe
 cd Zoe
 npm install
 npm start
+```
+```bash
+npm start // to start bot
+npm stop // to stop bot
+npm restart // to restart bot
 ```
 ---
 
