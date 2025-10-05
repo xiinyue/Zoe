@@ -36,7 +36,7 @@ Get your Koyeb API key.
 
 Now deploy:  
 
-[![DEPLOY](https://img.shields.io/badge/-DEPLOY-FFf61C?style=for-the-badge&logo=koyeb&logoColor=black)](https://app.koyeb.com/deploy?type=git&repository=github.com/Xirtexe/Zoe&branch=main&env[SESSION]=your_session_id&env[HANDLER]=null&env[MODE]=private&env[ANTI_DELETE]=true)
+[![DEPLOY](https://img.shields.io/badge/-DEPLOY-FFf61C?style=for-the-badge&logo=koyeb&logoColor=black)](https://app.koyeb.com/deploy?type=git&repository=github.com/Xirtexe/Zoe&branch=main&env[SESSION]=your_session_id&env[HANDLER]=null&env[MODE]=private&env[ANTI_DELETE]=true&env[KOYEB_API]=your_koyeb_api_key&env[KOYEB_APP_NAME]=zoe)
 
 ---
 
