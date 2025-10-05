@@ -7,16 +7,6 @@
 
 ---
 
-## 🚀 Features
-- Multi-device WhatsApp connection  
-- Anti-delete messages  
-- Auto read messages/commands (optional)  
-- Warn system  
-- Sticker & audio watermark support  
-- Easy deployment (Heroku, Koyeb, Render, Railway, VPS)  
-
----
-
 ## 🆔 Get Session ID
 Before deploying, you need to **generate a SESSION ID** here:  
 👉 [Zoe Session Generator](https://zoee-xd-web.onrender.com)  
@@ -41,10 +31,10 @@ Here are the required environment variables you must set before deploying:
 | READ_MSG              | Auto read messages                            | `false`       |
 | ANTI_DELETE           | Enable deleted message recovery               | `false`       |
 | WARN_COUNT            | Number of warnings before action              | `3`           |
-| BOT_INFO              | Bot info (name;logo URL)                      | `Team-XD;https://files.catbox.moe/85pjxr.png` |
-| AUDIO_DATA            | Audio watermark data                          | `ZOE-XD;badan ser!!!;https://files.catbox.moe/zhkwkn.png` |
-| STICKER_PACKDATA      | Sticker pack metadata                         | `ZOE-XD;badan ser!!!` |
-| SUDO                  | Owner number(s)                               | `919747257996,919037780075,124704912326723` |
+| BOT_INFO              | Bot info (name;logo URL)                      | ` Team - Xd ;https://files.catbox.moe/85pjxr.png` |
+| AUDIO_DATA            | Audio watermark data                          | ` Zoe - Xd ; Badan - Ser ;https://files.catbox.moe/zhkwkn.png` |
+| STICKER_PACKDATA      | Sticker pack metadata                         | ` Zoe - Xd ; Badan - Ser ` |
+| SUDO                  | Owner number(s)                               | `919747257996,919037780075` |
 | SESSION               | WhatsApp session ID                           | `Zoe-XD^baqdg3_badan` |
 | LANGUAGE              | Bot language                                  | `english`     |
 | RAILWAY_API           | Railway API key                               | ``            |
