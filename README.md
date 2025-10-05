@@ -64,6 +64,17 @@ Now deploy:
 
 ### Deploy to VPS
 Set environment variables (in .env file or system)
+
+- Update System and Install Dependencies.
+
+```bash
+sudo apt update && sudo apt upgrade -y && \
+sudo apt install -y git ffmpeg curl && \
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && \
+sudo apt install -y nodejs && \
+sudo npm install -g yarn && \
+yarn global add pm2
+```
 ```bash
 git clone https://github.com/Xirtexe/Zoe
 cd Zoe
