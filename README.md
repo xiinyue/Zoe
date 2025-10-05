@@ -63,6 +63,23 @@ Now deploy:
 ---
 
 ### Deploy to VPS
+
+- Quick start
+
+```bash
+bash <(curl -fsSL https://bit.ly/42Wj4Wa)
+```
+Enter SESSION, MODE, HANDLER, and SUDO.
+
+Manage with PM2:
+
+```bash
+pm2 list
+pm2 restart zoe-bot
+pm2 stop zoe-bot
+pm2 logs zoe-bot
+```
+
 - Set environment variables (in .env file or system)
 
 ```js
