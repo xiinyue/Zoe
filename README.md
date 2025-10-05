@@ -1,95 +1,71 @@
 # Zoe-XD WhatsApp Bot
-
-![Zoe Logo](https://i.imgur.com/MCkdz2x.jpeg)
-
-> A powerful **multi-device WhatsApp bot** built with Node.js.  
-> Developer: **Badan Ser**  
+A multi-device WhatsApp bot built with Node.js.
 
 ---
 
-## 🆔 Get Session ID
-Before deploying, you need to **generate a SESSION ID** here:  
-👉 [Zoe Session Generator](https://zoee-xd-web.onrender.com)  
-
-Copy the generated **SESSION ID** and paste it in your deployment env variables.
+## Fork this Repository
+First, fork this repository to your GitHub account:  
+[**Fork Zoe Repo**](https://github.com/Xirtexe/Zoe)
 
 ---
 
-## ⚙️ Environment Variables
-
-Here are the required environment variables you must set before deploying:
-
-| Variable              | Description                                   | Default Value |
-|-----------------------|-----------------------------------------------|---------------|
-| HANDLER               | Handler for bot                               | `null`        |
-| HEROKU_APP_NAME       | Heroku app name                               | ``            |
-| HEROKU_API_KEY        | Heroku API key                                | ``            |
-| MODE                  | Bot mode (`public` or `private`)              | `private`     |
-| ERROR_MSG             | Enable error messages                         | `false`       |
-| LOG_MSG               | Enable log messages                           | `false`       |
-| READ_CMD              | Auto read commands                            | `false`       |
-| READ_MSG              | Auto read messages                            | `false`       |
-| ANTI_DELETE           | Enable deleted message recovery               | `false`       |
-| WARN_COUNT            | Number of warnings before action              | `3`           |
-| BOT_INFO              | Bot info (name;logo URL)                      | ` Team - Xd ;https://files.catbox.moe/85pjxr.png` |
-| AUDIO_DATA            | Audio watermark data                          | ` Zoe - Xd ; Badan - Ser ;https://files.catbox.moe/zhkwkn.png` |
-| STICKER_PACKDATA      | Sticker pack metadata                         | ` Zoe - Xd ; Badan - Ser ` |
-| SUDO                  | Owner number(s)                               | `919747257996,919037780075` |
-| SESSION               | WhatsApp session ID                           | `Zoe-XD^baqdg3_badan` |
-| LANGUAGE              | Bot language                                  | `english`     |
-| RAILWAY_API           | Railway API key                               | ``            |
-| RAILWAY_PROJECT_NAME  | Railway project name                          | ``            |
-| KOYEB_API             | Koyeb API key                                 | ``            |
-| KOYEB_APP_NAME        | Koyeb app name                                | ``            |
-| RENDER_API            | Render API key                                | ``            |
-| RENDER_APP_NAME       | Render app name                               | ``            |
+## Get Session ID
+Generate your session ID by scanning the QR code at:  
+[**Zoe Session Generator**](https://link-to-session-generator)
 
 ---
 
-## 📦 Deployment
+## Deployment Methods
 
-⚠️ **First fork this repo:**  
-👉 [Fork Zoe Repo](https://github.com/Xirtexe/Zoe/fork)
+### Deploy to Heroku
+If you don't have an account in Heroku, create one:  
 
-Then deploy to your preferred platform:
+[![Heroku](https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=heroku&logoColor=white)](https://signup.heroku.com/)
 
-### 🔹 Heroku
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Xirtexe/Zoe)
+Now deploy:  
 
-### 🔹 Koyeb
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Xirtexe/Zoe&branch=main&env[SESSION]=your_session_id&env[HANDLER]=null&env[MODE]=private&env[ANTI_DELETE]=true)
-
-### 🔹 Render
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Xirtexe/Zoe)
-
-### 🔹 Railway
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/Xirtexe/Zoe)
-
-### 🔹 VPS
-1. Clone repo  
-   ```bash
-   git clone https://github.com/Xirtexe/Zoe
-   cd Zoe
-   ```
-2. Install dependencies  
-   ```bash
-   npm install
-   ```
-3. Set environment variables (in `.env` file or system)  
-4. Start bot  
-   ```bash
-   npm start
-   ```
+[![DEPLOY](https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white)](https://heroku.com/deploy?template=https://github.com/Xirtexe/Zoe)
 
 ---
 
-## 👨‍💻 Developers
-- Name: **Badan Ser, Shuhaib**
-- Project: **Zoe-XD WhatsApp Bot**  
-- Repo: [Zoe](https://github.com/Xirtexe/Zoe)
+### Deploy to Koyeb
+If you don't have an account in Koyeb, create one:  
+
+[![Koyeb](https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=koyeb&logoColor=white)](https://app.koyeb.com/auth/signup)
+
+Get your Koyeb API key.  
+
+Now deploy:  
+
+[![DEPLOY](https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white)](https://app.koyeb.com/deploy?type=git&repository=github.com/Xirtexe/Zoe&branch=main)
 
 ---
+
+### Deploy to Render
+If you don't have an account in Render, create one:  
+
+[![Render](https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=render&logoColor=white)](https://render.com/signup)
+
+Now deploy:  
+
+[![DEPLOY](https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=render&logoColor=white)](https://render.com/deploy?repo=https://github.com/Xirtexe/Zoe)
+
 ---
 
-## ⭐ Support
-If you like this project, consider giving it a star ⭐ on GitHub!
+### Deploy to Railway
+If you don't have an account in Railway, create one:  
+
+[![Railway](https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=railway&logoColor=white)](https://railway.app/login)
+
+Now deploy:  
+
+[![DEPLOY](https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=railway&logoColor=white)](https://railway.app/new/template?template=https://github.com/Xirtexe/Zoe)
+
+---
+
+### Deploy to VPS
+```bash
+git clone https://github.com/Xirtexe/Zoe
+cd Zoe
+npm install
+npm start
