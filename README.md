@@ -80,5 +80,6 @@ npm start
 
 [![WhatsApp](https://img.shields.io/badge/JOIN%20WHATSAPP%20GROUP-FFf61C?style=for-the-badge&logo=whatsapp&logoColor=#FF61F6)](https://railway.app/login)
 
+[![EXplugs](https://img.shields.io/badge/EXTERNAL%20PLUGINS-FFf61C?style=for-the-badge&logo=&logoColor=black)](https://zoee-xd-web.onrender.com/plugins)
 
 ---
