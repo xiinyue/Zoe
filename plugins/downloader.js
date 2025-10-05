@@ -42,7 +42,7 @@ async function hIG(m, q, label = "Instagram Downloader") {
     data
       .map((u, i) => `╎ *${i + 1}/${data.length}*  *~${u.type}~*`)
       .join`\n` +
-    `\n╎\n╎ ${lang.SNR_ALERT}\n╰╺╺╺╺╺╺╺╺╺╺╡`;
+    `\n╎\n╎ ${lang.SNR_ALERT}\n╰╺╺╺╺╺╺╺╺╺╺╡ `;
 
   return m.sendButton(m.jid, {
     jid: m.jid,
