@@ -82,6 +82,9 @@ sudo apt install -y nodejs && \
 sudo npm install -g yarn && \
 yarn global add pm2
 ```
+
+- Clone the Repository and Start the Bot
+
 ```bash
 git clone https://github.com/Xirtexe/Zoe
 cd Zoe
