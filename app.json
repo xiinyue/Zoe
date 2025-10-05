@@ -55,29 +55,29 @@
       "value": "false"
     },
     "WARN_COUNT": {
-      "description": "warn a user",
+      "description": "warn a count",
       "required": true,
       "value": "3"
     },
     "BOT_INFO": {
       "description": "Bot name and logo",
       "required": false,
-      "value": "Team-XD;https://files.catbox.moe/85pjxr.png"
+      "value": " Team - Xd ;https://files.catbox.moe/85pjxr.png"
     },
     "AUDIO_DATA": {
       "description": "Audio watermark data",
       "required": false,
-      "value": "ZOE-XD;badan ser!!!;https://files.catbox.moe/zhkwkn.png"
+      "value": " Zoe - Xd ; Badan - Ser ;https://files.catbox.moe/zhkwkn.png"
     },
     "STICKER_PACKDATA": {
       "description": "Sticker pack metadata",
       "required": false,
-      "value": "ZOE-XD;badan ser!!!"
+      "value": " Zoe - Xd ; Badan - Ser "
     },
     "SUDO": {
       "description": "owner number(s) of the bot",
       "required": false,
-      "value": "919747257996,919037780075,124704912326723"
+      "value": "919747257996,919037780075"
     },
     "SESSION": {
       "description": "session id",
