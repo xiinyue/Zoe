@@ -14,7 +14,7 @@ async function hIG(m, q, label = "Instagram Downloader") {
   }
 
   const { data } = await getJson(
-    `https://api-aswin-sparky.koyeb.app/api/downloader/igdl?url=${q}`
+    `https://badan-tools-web.onrender.com/api/insta?url=${q}`
   );
 
   if (!data?.length) return m.reply(lang.NF_ALERT);
