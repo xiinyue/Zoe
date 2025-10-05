@@ -63,7 +63,14 @@ Now deploy:
 ---
 
 ### Deploy to VPS
-Set environment variables (in .env file or system)
+- Set environment variables (in .env file or system)
+
+```js
+SUDO=919747257996,919037780075
+SESSION=Zoe-XD^...
+MODE=private
+HANDLER=,
+```
 
 - Update System and Install Dependencies.
 
