@@ -10,7 +10,7 @@ First, fork this repository to your GitHub account:
 
 ## Get Session ID
 Generate your session ID by scanning the QR code at:  
-[![Scan](https://img.shields.io/badge/SCAN%20QR-FFf61C?style=for-the-badge&logo=&logoColor=black)](https://zoee-xd-web.onrender.com)
+[![Scan](https://img.shields.io/badge/SCAN%20QR-FFf61C?style=for-the-badge&logo=&logoColor=black)](https://zoe-xd-ofc.onrender.com)
 
 ---
 
@@ -23,7 +23,7 @@ If you don't have an account in Heroku, create one:
 
 Now deploy:  
 
-[![DEPLOY](https://img.shields.io/badge/-DEPLOY-FFf61C?style=for-the-badge&logo=heroku&logoColor=black)](https://heroku.com/deploy?template=https://github.com/Xirtexe/Zoe)
+[![DEPLOY](https://img.shields.io/badge/-DEPLOY-FFf61C?style=for-the-badge&logo=heroku&logoColor=black)](https://zoe-xd-ofc.onrender.com/deploy/heroku)
 
 ---
 
@@ -36,7 +36,7 @@ Get your Koyeb API key.
 
 Now deploy:  
 
-[![DEPLOY](https://img.shields.io/badge/-DEPLOY-FFf61C?style=for-the-badge&logo=koyeb&logoColor=black)](https://app.koyeb.com/deploy?type=git&repository=github.com/Xirtexe/Zoe&branch=main&env[SESSION]=your_session_id&env[HANDLER]=null&env[MODE]=private&env[ANTI_DELETE]=true&env[KOYEB_API]=your_koyeb_api_key&env[KOYEB_APP_NAME]=zoe)
+[![DEPLOY](https://img.shields.io/badge/-DEPLOY-FFf61C?style=for-the-badge&logo=koyeb&logoColor=black)](https://zoe-xd-ofc.onrender.com/deploy/koyeb)
 
 ---
 
@@ -47,7 +47,7 @@ If you don't have an account in Render, create one:
 
 Now deploy:  
 
-[![DEPLOY](https://img.shields.io/badge/-DEPLOY-FFf61C?style=for-the-badge&logo=render&logoColor=black)](https://render.com/deploy?repo=https://github.com/Xirtexe/Zoe)
+[![DEPLOY](https://img.shields.io/badge/-DEPLOY-FFf61C?style=for-the-badge&logo=render&logoColor=black)](https://zoe-xd-ofc.onrender.com/deploy/render)
 
 ---
 
@@ -58,7 +58,7 @@ If you don't have an account in Railway, create one:
 
 Now deploy:  
 
-[![DEPLOY](https://img.shields.io/badge/-DEPLOY-FFf61C?style=for-the-badge&logo=railway&logoColor=black)](https://railway.com/deploy/Eyzy61?referralCode=9jiDW-)
+[![DEPLOY](https://img.shields.io/badge/-DEPLOY-FFf61C?style=for-the-badge&logo=railway&logoColor=black)](https://zoe-xd-ofc.onrender.com/deploy/railway)
 
 ---
 
@@ -117,6 +117,14 @@ npm stop // to stop bot
 npm restart // to restart bot
 ```
 ---
+## Important warning
+
+- Using unofficial APIs or automation with WhatsApp may violate their Terms of Service.
+
+- Your account may be temporarily or permanently banned if WhatsApp detects automated or unauthorized access.
+
+- Proceed only if you understand and accept this risk
+---
 
 ## Special thanks to
 - [Loki ❤️](https://github.com/Loki-Xer) <br>
@@ -126,6 +134,6 @@ npm restart // to restart bot
 
 [![WhatsApp](https://img.shields.io/badge/JOIN%20WHATSAPP%20GROUP-FFf61C?style=for-the-badge&logo=whatsapp&logoColor=black)](https://railway.app/login)
 
-[![EXplugs](https://img.shields.io/badge/EXTERNAL%20PLUGINS-FFf61C?style=for-the-badge&logo=&logoColor=black)](https://zoee-xd-web.onrender.com/plugins)
+[![EXplugs](https://img.shields.io/badge/EXTERNAL%20PLUGINS-FFf61C?style=for-the-badge&logo=&logoColor=black)](https://zoe-xd-ofc.onrender.com/plugins)
 
 ---
