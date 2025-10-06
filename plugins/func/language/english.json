@@ -252,7 +252,7 @@
             "PEX_ALERT": "*Send a plugin url to install plugin*\n\n_plugin url - to install external plugin_\n_plugin list - to get installed plugin list._\n_plugin name - to get installed plugin url using name._",
             "IU_ALERT": "*Invalid URL*",
             "NPF_ALERT": "*No plugin found*",
-            "NPI_ALERT": "*New plugin installed*",
+            "NPI_ALERT": "*New plugin installed:* ",
             "ERRP_ALERT": "*Error occurred while installing plugin*",
             "PNF_ALERT": "*Plugin not found*",
             "NPN_ALERT": "*Need a plugin name to remove*\n_Example: remove ss_",
