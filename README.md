@@ -132,7 +132,9 @@ npm restart // to restart bot
 
 ---
 
-[![WhatsApp](https://img.shields.io/badge/JOIN%20WHATSAPP%20GROUP-FFf61C?style=for-the-badge&logo=whatsapp&logoColor=black)](https://railway.app/login)
+[![WhatsApp](https://img.shields.io/badge/JOIN%20WHATSAPP%20GROUP-FFf61C?style=for-the-badge&logo=whatsapp&logoColor=black)](https://chat.whatsapp.com/BxNvOg51FYk2Q2JYmfogCm)
+
+[![WhatsApp](https://img.shields.io/badge/JOIN%20WHATSAPP%20CHANNEL-FFf61C?style=for-the-badge&logo=whatsapp&logoColor=black)](https://whatsapp.com/channel/0029Va8q83cBPzjV0sFn2F03)
 
 [![EXplugs](https://img.shields.io/badge/EXTERNAL%20PLUGINS-FFf61C?style=for-the-badge&logo=&logoColor=black)](https://zoe-xd-ofc.onrender.com/plugins)
 
