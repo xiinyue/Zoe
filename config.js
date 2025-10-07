@@ -32,7 +32,7 @@ module.exports = {
   AUDIO_DATA: process.env.AUDIO_DATA || ' Zoe - Xd ; Badan - Ser ;https://files.catbox.moe/zhkwkn.png',
   STICKER_PACKDATA: process.env.STICKER_PACKDATA || ' Zoe - Xd ; Badan - Ser ',
   SUDO: process.env.SUDO || '919747257996,919037780075',
-  SESSION: process.env.SESSION || "Zoe-XD^baqdg3_badan",
+  SESSION: process.env.SESSION || "Zoe-XD^xardbb_badan",
   LANGUAGE: process.env.LANGUAGE || "english",
   DATABASE:
     DATABASE_URL === "./database.db"
