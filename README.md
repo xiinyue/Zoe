@@ -1,5 +1,5 @@
 # Zoe-XD WhatsApp Bot
-A multi-device WhatsApp bot built with Node.js.
+A WhatsApp bot built with Node.js.
 
 ---
 
