@@ -127,7 +127,6 @@ npm restart // to restart bot
 ---
 
 ## Special thanks to
-- [Loki ❤️](https://github.com/Loki-Xer) <br>
 - [Shuhaib ❤️](https://github.com/Abhiiyh) <br>
 
 ---
